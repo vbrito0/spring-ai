@@ -74,38 +74,48 @@ public class OpenAiService {
 O OpenAiService faz uma chamada HTTP POST para a API da OpenAI.
 Constrói o corpo da requisição com o modelo e a mensagem fornecida pelo usuário.
 Retorna a resposta da IA em formato JSON.
-Arquivo de Configuração: application.properties
-properties
-Copy code
+
+***Arquivo de Configuração***: application.properties
+```properties
 spring.application.name=ai
 ###spring.ai.openai.api-key=sk-xxxxxxxxxxxxxxxxxxxxx
 spring.ai.openai.model=gpt-3.5-turbo
-spring.ai.openai.api-key: Chave da API fornecida pelo OpenAI (comente ou remova antes de fazer o commit).
-spring.ai.openai.model: O modelo GPT que será utilizado para processar as perguntas.
-Instalação e Configuração
+```
+
+***spring.ai.openai.api-key***: Chave da API fornecida pelo OpenAI (comente ou remova antes de fazer o commit).
+***spring.ai.openai.model***: O modelo GPT que será utilizado para processar as perguntas.
+
+## Instalação e Configuração ##
 Clone o repositório:
 
-bash
-Copy code
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+```
 Adicione a chave da API do OpenAI no arquivo application.properties:
 
-properties
-Copy code
+```properties
 spring.ai.openai.api-key=sk-seu-key-aqui
 spring.ai.openai.model=gpt-3.5-turbo
+```
 Execute a aplicação Spring Boot:
 
-bash
-Copy code
+```bash
 ./mvnw spring-boot:run
-Acesse a API em http://localhost:8080/moviestore/ask?question=Qual+é+o+melhor+filme+de+2024
+```
 
-Dependências
-Spring Boot
-Spring Web
-RestTemplate
-OpenAI API
-Contribuição
-Se quiser contribuir, por favor, faça um fork do projeto, crie um branch, faça suas mudanças e abra um pull request.
+***Acesse a API*** 
+http://localhost:8080/moviestore/ask?question=Qual+é+o+melhor+filme+de+2024
+
+## Dependências ##
+
+- ***Spring Boot***
+
+- ***Spring Web***
+
+- ***RestTemplate***
+
+- ***OpenAI API***
+
+## Contribuição ##
+- Se quiser contribuir, por favor, faça um fork do projeto, crie um branch, faça suas mudanças e abra um pull request.
