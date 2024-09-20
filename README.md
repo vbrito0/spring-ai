@@ -1,13 +1,13 @@
-## OpenAI Movie Store Assistant ##
+# OpenAI Movie Store Assistant #
 Este projeto é uma API construída com Spring Boot, que utiliza a API do OpenAI para fornecer respostas baseadas em modelos de IA (GPT-3.5-turbo). A aplicação inclui um serviço que envia perguntas para o modelo da OpenAI e retorna respostas, simulando uma experiência de assistente para uma loja de filmes.
 
-# Funcionalidades #
-Enviar perguntas à API da OpenAI e receber respostas baseadas em IA.
-Integração com o modelo GPT-3.5-turbo para processamento de linguagem natural.
-Rota REST simples para interagir com o assistente virtual.
-Estrutura do Projeto
-Controlador: MoviestoreAssistantController
-O controlador principal define um endpoint REST que aceita perguntas do usuário e retorna respostas da IA.
+## Funcionalidades ##
+-Enviar perguntas à API da OpenAI e receber respostas baseadas em IA.
+-Integração com o modelo GPT-3.5-turbo para processamento de linguagem natural.
+-Rota REST simples para interagir com o assistente virtual.
+-Estrutura do Projeto
+-Controlador: MoviestoreAssistantController
+-O controlador principal define um endpoint REST que aceita perguntas do usuário e retorna respostas da IA.
 
 java
 Copy code
