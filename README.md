@@ -3,14 +3,13 @@ Este projeto é uma API construída com Spring Boot, que utiliza a API do OpenAI
 
 ## Funcionalidades ##
 - Enviar perguntas à API da OpenAI e receber respostas baseadas em IA.
-- Integração com o modelo GPT-3.5-turbo para processamento de linguagem natural.
+- Integração com o modelo ***GPT-3.5-turbo*** para processamento de linguagem natural.
 - Rota REST simples para interagir com o assistente virtual.
 - Estrutura do Projeto
-- Controlador: MoviestoreAssistantController
+- ***Controlador***: MoviestoreAssistantController
 - O controlador principal define um endpoint REST que aceita perguntas do usuário e retorna respostas da IA.
 
-java
-Copy code
+```java
 @RestController
 @RequestMapping("/moviestore")
 public class MoviestoreAssistantController {
@@ -23,14 +22,14 @@ public class MoviestoreAssistantController {
         return openAiService.getResponseFromAi(question);
     }
 }
-Endpoint: /moviestore/ask
-Parâmetro: question - A pergunta do usuário para o assistente da OpenAI.
-Resposta: A resposta da IA baseada na entrada fornecida.
-Serviço: OpenAiService
+```
+- ***Endpoint***: /moviestore/ask
+- ***Parâmetro***: question - A pergunta do usuário para o assistente da OpenAI.
+- ***Resposta***: A resposta da IA baseada na entrada fornecida.
+- ***Serviço***: OpenAiService
 O serviço que encapsula a lógica de comunicação com a API da OpenAI.
 
-java
-Copy code
+```java
 @Service
 public class OpenAiService {
 
@@ -70,6 +69,8 @@ public class OpenAiService {
         return requestBody.toString();
     }
 }
+```
+
 O OpenAiService faz uma chamada HTTP POST para a API da OpenAI.
 Constrói o corpo da requisição com o modelo e a mensagem fornecida pelo usuário.
 Retorna a resposta da IA em formato JSON.
